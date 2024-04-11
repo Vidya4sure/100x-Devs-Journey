@@ -3,16 +3,12 @@ import { useState, useEffect } from "react";
 function TodoUseEffect() {
   const [num, setNum] = useState(1);
 
-  function handleClick(value) {
-    setNum(value);
-  }
-
   return (
     <div>
-      <button onClick={() => handleClick(1)}>1</button>
-      <button onClick={() => handleClick(2)}>2</button>
-      <button onClick={() => handleClick(3)}>3</button>
-      <button onClick={() => handleClick(4)}>4</button>
+      <button onClick={() => setNum(1)}>1</button>
+      <button onClick={() => setNum(2)}>2</button>
+      <button onClick={() => setNum(3)}>3</button>
+      <button onClick={() => setNum(4)}>4</button>
       <Todo id={num} />
     </div>
   );
