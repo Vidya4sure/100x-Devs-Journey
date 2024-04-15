@@ -7,3 +7,4 @@
 
 - useState (The element which changes)
 - useEffect (only change happen when there is conditon or happen only once )
+- useMemo (memoization)
